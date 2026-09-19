@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="te">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>బొజ్జా వెంకట ప్రసాద్ జ్యువెలరీ వర్క్స్</title>
+  <meta name="description" content="బొజ్జా వెంకట ప్రసాద్ జ్యువెలరీ వర్క్స్ తెలంగాణ సంప్రదాయ బంగారు ఆభరణాలు.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Noto+Serif+Telugu:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="decorative-frame" aria-hidden="true">
+    <span class="frame-corner frame-corner-tl"></span>
+    <span class="frame-corner frame-corner-tr"></span>
+    <span class="frame-corner frame-corner-bl"></span>
+    <span class="frame-corner frame-corner-br"></span>
+  </div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="బొజ్జా వెంకట ప్రసాద్ జ్యువెలరీ వర్క్స్ హోమ్">
+      <span class="brand-mark">BVP</span>
+      <span><strong>బొజ్జా వెంకట ప్రసాద్</strong><small>జ్యువెలరీ వర్క్స్</small></span>
+    </a>
+    <nav class="site-nav" aria-label="ప్రధాన నావిగేషన్">
+      <a href="#collection">ఆభరణాలు</a>
+      <a href="#our-story">మా కథ</a>
+      <a href="#visit">మమ్మల్ని కలవండి</a>
+    </nav>
+    <a class="header-action" href="#collection">ఆభరణాలు చూడండి <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">1995 నుండి · తెలంగాణ</p>
+        <h1>బొజ్జా వెంకట<br><em>ప్రసాద్</em></h1>
+        <p class="hero-description">తెలంగాణ సంప్రదాయాన్ని, ఆధునిక అందాన్ని కలిపి మీ ప్రత్యేక సందర్భాల కోసం రూపొందించిన బంగారు ఆభరణాలు.</p>
+        <a class="button button-dark" href="#collection">ఆభరణాల సేకరణ చూడండి <span aria-hidden="true">↓</span></a>
+        <div class="hero-notes"><span>22 క్యారెట్ల హాల్‌మార్క్</span><span>ఉచిత సంప్రదింపు</span></div>
+      </div>
+      <div class="hero-image-wrap">
+        <img src="/static/images/your-hero-image.jpg" alt="బంగారు ఆభరణాలు">
+        <div class="hero-stamp"><span>ప్రతి పనిలో</span><strong>నైపుణ్యం</strong><span>ప్రతి నగలో శ్రద్ధ</span></div>
+      </div>
+      <div class="hero-side-label">బీవీపీ సేకరణ · 01</div>
+    </section>
+
+    <section class="trust-strip" aria-label="మా ప్రత్యేకతలు">
+      <div><span class="strip-number">01</span><strong>హాల్‌మార్క్ హామీ</strong><span>నమ్మకమైన స్వచ్ఛత</span></div>
+      <div><span class="strip-number">02</span><strong>మీ కోసం తయారీ</strong><span>మీ సందర్భానికి ప్రత్యేకంగా</span></div>
+      <div><span class="strip-number">03</span><strong>స్పష్టమైన ధరలు</strong><span>ప్రతి ఛార్జీ వివరంగా</span></div>
+    </section>
+
+    <section class="collection-section" id="collection">
+      <div class="section-heading">
+        <div><p class="eyebrow">తెలంగాణ ఆభరణాల సేకరణ</p><h2>మీ కథలో<br><em>ఒక భాగం.</em></h2></div>
+        <p class="section-intro">తెలంగాణలో తరతరాలుగా ధరించే ఆభరణాలను మీ కోసం ప్రత్యేకంగా ఎంపిక చేశాము.</p>
+      </div>
+      <div class="toolbar">
+        <div class="filter-group" role="group" aria-label="వర్గం ఆధారంగా ఎంచుకోండి">
+          <button class="filter-button active" data-category="All">అన్నీ</button>
+          <button class="filter-button" data-category="హారాలు">హారాలు</button>
+          <button class="filter-button" data-category="చెవి ఆభరణాలు">చెవి ఆభరణాలు</button>
+          <button class="filter-button" data-category="గాజులు">గాజులు</button>
+          <button class="filter-button" data-category="మంగళసూత్రాలు">మంగళసూత్రాలు</button>
+          <button class="filter-button" data-category="వివాహ ఆభరణాలు">వివాహ ఆభరణాలు</button>
+          <button class="filter-button" data-category="వధువు నగలు">వధువు నగలు</button>
+        </div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="ఆభరణం వెతకండి" aria-label="ఆభరణాలు వెతకండి"></label>
+      </div>
+      <div id="product-grid" class="product-grid" aria-live="polite"></div>
+      <p id="empty-state" class="empty-state" hidden>మీ వెతుకులాటకు సరిపోలే ఆభరణం లేదు.</p>
+    </section>
+
+    <section class="story-section" id="our-story">
+      <div class="story-image"><img src="/static/images/necklace.jpg" alt="బంగారు గాజుల అందమైన వివరాలు"></div>
+      <div class="story-copy"><p class="eyebrow">బొజ్జా వారి హామీ</p><h2>సంప్రదాయానికి<br><em>కొత్త మెరుపు.</em></h2><p>రెండు తరాలుగా మా పనివారు ఓర్పు, నైపుణ్యం మరియు వ్యక్తిగత శ్రద్ధతో ప్రతి నగను తయారు చేస్తున్నారు. మొదటి రోజు నుంచే మీకు నచ్చి, కాలంతో పాటు మరింత విలువైనదిగా మారే నగలే మా లక్ష్యం.</p><a class="text-link" href="#visit">మా షోరూమ్‌కి రండి <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="visit-section" id="visit"><div><p class="eyebrow">మమ్మల్ని కలవండి</p><h2>మీ తదుపరి వారసత్వ నగ<br>ఇక్కడే మొదలు.</h2></div><div class="visit-details"><p>మీకు నచ్చిన నగను ఎంచుకోవడానికి మా షాపుకి రండి లేదా కస్టమ్ డిజైన్ కోసం మాకు ఫోన్ చేయండి.</p><p><strong>నగరం, పరకాల</strong><br>వరంగల్, తెలంగాణ</p><p><strong>+91 9963467364</strong><br>సోమ–శని · ఉదయం 10:30–రాత్రి 8:00</p></div></section>
+  </main>
+
+  <footer class="site-footer"><span>© 2026 బొజ్జా వెంకట ప్రసాద్ జ్యువెలరీ వర్క్స్</span><span>ఓర్పుతో తయారు చేసి, ఆనందంగా ధరించండి.</span></footer>
+
+  <div id="product-modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-card"><button class="modal-close" data-close-modal aria-label="వివరాలు మూసివేయండి">×</button><div id="modal-content"></div></article>
+  </div>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
